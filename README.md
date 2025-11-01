@@ -3,7 +3,7 @@
 <!-- PIVOT: Добавить скриншот или GIF проекта -->
 ![Positivus Preview](./preview.png) <!-- Замените на актуальный путь к изображению -->
 
-A modern, responsive, and clean landing page template designed for digital marketing agencies. This project is a front-end implementation of a design by [Olga](https://www.figma.com/files/team/1361448120998279856/resources/community/@olgaaverchenko), built with Nuxt 3 to showcase services, case studies, and team members effectively.
+A modern, responsive, and clean landing page template designed for digital marketing agencies. This project is a front-end implementation of a design by [Olga](https://www.figma.com/files/team/1361448120998279856/resources/community/@olgaaverchenko), built with Nuxt 4 to showcase services, case studies, and team members effectively.
 
 ## 🚀 Live Demo
 
@@ -27,7 +27,7 @@ The page is structured into key sections:
 This project was built using modern web technologies and frameworks:
 
 ### Frontend Framework
-*   **[Nuxt 3](https://nuxt.com/)** - The intuitive Vue framework
+*   **[Nuxt 4](https://nuxt.com/)** - The intuitive Vue framework
 
 ### Core Technologies
 *   **Vue 3** - Progressive JavaScript framework
@@ -51,5 +51,3 @@ The original design was created by **Olga**.
 *   **Figma Community Resource:** [About the "Positivus" Template](https://www.figma.com/files/team/1361448120998279856/resources/community/@olgaaverchenko)
 
 > This implementation is a development of the provided design mockup. All design credits belong to the original author.
-
-## 📁 Project Structure
