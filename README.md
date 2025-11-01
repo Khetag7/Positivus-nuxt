@@ -1,8 +1,8 @@
 # Positivus - Landing Page
 
-<!-- PIVOT: Добавить скриншот или GIF проекта -->
-![Positivus Preview](<img width="1355" height="759" alt="image" src="https://github.com/user-attachments/assets/dfc72404-696b-4ca2-8046-623ae014460c" />
-) <!-- Замените на актуальный путь к изображению -->
+## Positivus Preview
+<img width="1355" height="759" alt="image" src="https://github.com/user-attachments/assets/dcbaa89a-b922-4a11-a828-ec1db475414a" />
+
 
 A modern, responsive, and clean landing page template designed for digital marketing agencies. This project is a front-end implementation of a design by [Olga](https://www.figma.com/files/team/1361448120998279856/resources/community/@olgaaverchenko), built with Nuxt 4 to showcase services, case studies, and team members effectively.
 
