@@ -1,75 +1,55 @@
-# Nuxt Minimal Starter
+# Positivus - Landing Page
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<!-- PIVOT: Добавить скриншот или GIF проекта -->
+![Positivus Preview](./preview.png) <!-- Замените на актуальный путь к изображению -->
 
-## Setup
+A modern, responsive, and clean landing page template designed for digital marketing agencies. This project is a front-end implementation of a design by [Olga](https://www.figma.com/files/team/1361448120998279856/resources/community/@olgaaverchenko), built with Nuxt 3 to showcase services, case studies, and team members effectively.
 
-Make sure to install dependencies:
+## 🚀 Live Demo
 
-```bash
-# npm
-npm install
+[View Live Site](https://khetag7.github.io/positivus/) <!-- Замените на вашу ссылку на GitHub Pages или другой хостинг -->
 
-# pnpm
-pnpm install
+## 📋 Overview
 
-# yarn
-yarn install
+**Positivus** is a beautiful and functional landing page, perfect for digital marketing agencies looking to attract new clients and establish a strong online presence. The design emphasizes clarity, modernity, and ease of navigation.
 
-# bun
-bun install
-```
+The page is structured into key sections:
+*   **Services:** Showcase your core offerings.
+*   **Case Studies:** Highlight your successful projects and results.
+*   **Our Working Process:** Explain how you work with clients.
+*   **Team:** Introduce your team members.
+*   **Testimonials:** Build trust with client feedback.
+*   **Contact Us:** A clear call-to-action for potential clients.
+*   **Footer:** Comprehensive site links and information.
 
-## Development Server
+## 🛠️ Built With
 
-Start the development server on `http://localhost:3000`:
+This project was built using modern web technologies and frameworks:
 
-```bash
-# npm
-npm run dev
+### Frontend Framework
+*   **[Nuxt 3](https://nuxt.com/)** - The intuitive Vue framework
 
-# pnpm
-pnpm dev
+### Core Technologies
+*   **Vue 3** - Progressive JavaScript framework
+*   **TypeScript** - For type-safe code
+*   **HTML5** - For semantic and accessible structure
+*   **CSS3 & SCSS** - For advanced styling with preprocessor features
 
-# yarn
-yarn dev
+### Styling & Layout
+*   **SCSS** - CSS preprocessor for maintainable styles
+*   **Flexbox & Grid** - For modern responsive layouts
+*   **CSS Custom Properties** - For consistent theming and variables
 
-# bun
-bun run dev
-```
+### Development Tools
+*   **JavaScript/TypeScript** - For interactive functionality
+*   **Vite** - Next generation frontend tooling
 
-## Production
+## 🎨 Design Credits
 
-Build the application for production:
+The original design was created by **Olga**.
+*   **Designer's Figma Profile:** [Olga Averchenko](https://www.figma.com/files/team/1361448120998279856/resources/community/@olgaaverchenko)
+*   **Figma Community Resource:** [About the "Positivus" Template](https://www.figma.com/files/team/1361448120998279856/resources/community/@olgaaverchenko)
 
-```bash
-# npm
-npm run build
+> This implementation is a development of the provided design mockup. All design credits belong to the original author.
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 📁 Project Structure
