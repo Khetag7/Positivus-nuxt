@@ -81,6 +81,8 @@
   "build_tool": "Vite",
   "features": ["Auto-imports", "File-based routing", "SSR Ready"]
 }
+```
+
 ### Development Stack
 | Category | Technologies |
 |----------|--------------|
@@ -199,5 +201,5 @@ positivus/
 [![Star History Chart](https://api.star-history.com/svg?repos=Khetag7/positivus&type=Date)](https://star-history.com/#Khetag7/positivus&Date)
 
 </div>
-```
+
 
