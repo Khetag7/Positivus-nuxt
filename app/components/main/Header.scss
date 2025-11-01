@@ -1,0 +1,204 @@
+@use '@/assets/styles/variables' as *;
+
+.header__nav
+{
+  width: 100%;
+}
+.header__list
+{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: end;
+  
+  &-text
+  {
+    @include g-text-one;
+    text-align: center;
+    color: #000000;
+    
+    &:hover
+    {
+      text-decoration: underline;
+    }
+  }
+  .header__btn &-text:hover
+  {
+    text-decoration: none;
+  }
+}
+.header__btn
+{
+  display: block;
+  border: 1px solid #000000;
+  border-radius: 14px;
+  padding: 20px 35px;
+  max-width: 233px;
+  width: 100%;
+  height: 100%;
+  max-height: 68px;
+  transition: .3s;
+  
+  &:hover
+  {
+    transition: .3s;
+    background-color: #191A23;
+    
+    & p
+    {
+      transition: .3s;
+      color: #FFF;
+    }
+  }
+}
+
+.header__burger
+{
+  transition: .3s;
+  display: none;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1001;
+  position: relative;
+  
+  & div
+  {
+    transition: .3s;
+    background-color: #000000;
+    width: 35px;
+    height: 4px;
+  }
+}
+
+.header__burger-active
+{
+  & div:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  
+  & div:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  & div:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -8px);
+  }
+}
+
+// Мобильная навигация (всегда скрыта кроме мобильной версии)
+.header__nav--mobile {
+  display: none;
+}
+
+// Десктопная навигация (всегда видна кроме мобильной версии)
+.header__nav--desktop {
+  display: block;
+}
+
+.header__logo
+{
+  z-index: 1001;
+  position: relative;
+}
+
+@media(max-width: 1240px)
+{
+  .container
+  {
+    padding: 0 20px;
+  }
+  .header__list
+  {
+    gap: 25px;
+    
+    &-text
+    {
+      font-size: 18px;
+    }
+  }
+  .header__logo
+  {
+    max-width: 170px;
+  }
+  .header__btn
+  {
+    width: auto;
+    padding: 15px 15px;
+  }
+}
+
+@media(max-width: 860px)
+{
+  header
+  {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+  
+  .header__burger
+  {
+    display: flex;
+  }
+  
+  // Скрываем десктопную навигацию
+  .header__nav--desktop
+  {
+    display: none;
+  }
+  
+  // Стили для мобильной навигации
+  .header__nav--mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    z-index: 1000;
+    padding: 100px 20px 40px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    
+    &.header__nav--active {
+      display: block;
+      transform: translateX(0);
+    }
+    
+    .header__list {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      height: auto;
+      justify-content: flex-start;
+      
+      &-text {
+        font-size: 22px;
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    
+    .header__btn {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 280px;
+      padding: 18px 25px;
+      
+      & p {
+        margin: 0;
+        font-size: 18px;
+      }
+    }
+  }
+  
+  .header__logo
+  {
+    max-width: 150px;
+  }
+}

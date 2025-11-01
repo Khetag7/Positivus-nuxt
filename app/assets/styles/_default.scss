@@ -1,0 +1,36 @@
+@use '@/assets/styles/variables' as *;
+
+*
+{
+	font-family: $font-primary;
+	margin: 0;
+	padding: 0;
+	border:0;
+	box-sizing: border-box;
+}
+header
+{
+	margin-top: 60px;
+	margin-bottom: 70px;
+}
+ul
+{
+	list-style-type: none;
+}
+a
+{
+	text-decoration: none;
+}
+.container
+{
+	max-width: 1440px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 100px;
+}
+.g-flex
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
