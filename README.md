@@ -1,6 +1,3 @@
-Вот красивый и профессиональный README файл с улучшенным форматированием и визуальными элементами:
-
-```markdown
 <h1 align="center">
   <br>
   <img src="https://github.com/user-attachments/assets/dcbaa89a-b922-4a11-a828-ec1db475414a" alt="Positivus" width="600">
@@ -84,8 +81,6 @@
   "build_tool": "Vite",
   "features": ["Auto-imports", "File-based routing", "SSR Ready"]
 }
-```
-
 ### Development Stack
 | Category | Technologies |
 |----------|--------------|
