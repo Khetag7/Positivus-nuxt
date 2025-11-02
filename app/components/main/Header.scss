@@ -152,6 +152,9 @@
   
   // Стили для мобильной навигации
   .header__nav--mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -165,8 +168,10 @@
     overflow-y: auto;
     
     &.header__nav--active {
-      display: block;
       transform: translateX(0);
+      display: flex;
+    justify-content: center;
+    align-items: center;
     }
     
     .header__list {
@@ -175,6 +180,7 @@
       gap: 30px;
       height: auto;
       justify-content: flex-start;
+      max-width: 300px;
       
       &-text {
         font-size: 22px;

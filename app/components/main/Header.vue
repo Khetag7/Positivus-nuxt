@@ -4,11 +4,26 @@ const isMenuOpen = ref(false)
 
 const handleClick = () => {
   isMenuOpen.value = !isMenuOpen.value
+  
+  if(isMenuOpen.value)
+  {
+    document.body.style.overflow = 'hidden'
+  } else
+  {
+    document.body.style.overflow = ''
+  }
 }
 
 const handleClose = () => {
   isMenuOpen.value = false
+  document.body.style.overflow = ''
+  
 }
+
+onUnmounted(() => {
+  document.body.style.overflow = ''
+})
+
 </script>
 
 <template>
@@ -45,7 +60,7 @@ const handleClose = () => {
       
       <!-- Мобильная навигация -->
       <nav class="header__nav header__nav--mobile" :class="{ 'header__nav--active': isMenuOpen }" @click="handleClose">
-        <ul class="header__list">
+        <ul class="header__list" @click.stop>
           <li>
             <nuxt-link to="/" class="header__list-text" @click="handleClose">About us</nuxt-link>
           </li>

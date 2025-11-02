@@ -1,5 +1,5 @@
 <template>
-	<sectionsFirst />
+	<sectionsNavigating />
 </template>
 
 <script setup >
