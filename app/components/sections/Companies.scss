@@ -1,0 +1,39 @@
+@use '@/assets/styles/variables' as *;
+
+.companies
+{
+  margin-bottom: 140px;
+}
+.company__logoes
+{
+
+  img {
+    // Делаем логотипы серыми
+    filter: grayscale(100%) brightness(0.7);
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+    
+    // Возвращаем оригинальный цвет при наведении
+    &:hover {
+      filter: grayscale(0%) brightness(1);
+      opacity: 1;
+      transform: scale(1.05); // Небольшое увеличение для эффекта
+    }
+  }
+}
+@media(max-width: 1024px)
+{
+  .container
+  {
+    padding: 0 20px;
+  }
+  .g-flex
+  {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .companies
+  {
+    margin-bottom: 70px;
+  }
+}
