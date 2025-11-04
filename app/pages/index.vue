@@ -2,7 +2,8 @@
 	<sectionsNavigating />
 	<sectionsCompanies />
 	<sectionsServices />
-	
+	<sectionsAd />
+	<sectionsCaseStudies />
 	
 </template>
 

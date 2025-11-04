@@ -1,0 +1,164 @@
+@use '@/assets/styles/variables' as *;
+
+.studies
+{
+  margin-bottom: 140px;
+}
+.studies__titles
+{
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 813px;
+  
+  &-title
+  {
+    @include g-heading-texts;
+    @include g-heading;
+    background: #B9FF66;
+    max-width: 265px;
+  }
+  
+  &-text
+  {
+    @include g-text-two
+  }
+}
+.studies__blocks
+{
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  border-radius: 45px;
+  padding: 70px 60px;
+  background-color: #191A23;
+}
+.studies__block
+{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  padding-right: 64px;
+  border-right: 1px solid #FFF;
+  
+  &:last-child
+  {
+    border-right: none;
+    padding-right: 0;
+  }
+  
+  &-text
+  {
+    @include g-text-two;
+    color: #FFF;
+    max-width: 286px;
+  }
+}
+.studies__block-btn
+{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+  &:hover &-text
+  {
+    font-size: 20.5px;
+  }
+  
+  &-text
+  {
+    @include g-text-one;
+    color: #B9FF66;
+    transition: .3s all ease;
+  }
+  
+  &:hover &-img
+  {
+    transform: translate(3px, -2px);
+  }
+  
+  &-img
+  {
+    transition: .3s all ease;
+  }
+}
+@media(max-width: 1064px)
+{
+  .studies
+  {
+    margin-bottom: 70px;
+  }
+  .container
+  {
+    padding: 0 20px;
+  }
+  .studies__blocks
+  {
+    flex-direction: column-reverse;
+  }
+  .studies__block
+  {
+    align-items: center;
+    max-width: none;
+    width: 100%;
+    border-right: none;
+    border-top: 1px solid #FFF; 
+    padding-right: 0;
+    padding-top: 64px;
+    
+    &:last-child
+    {
+      border-top: none;
+      padding-top: 0;
+    }
+    
+    &-text
+    {
+      max-width: none;
+      text-align: center;
+    }
+  }
+  .studies__block-btn
+  {
+    
+    &:hover &-text
+    {
+      font-size: 20.4px;
+    }
+  }
+}
+@media(max-width: 864px)
+{
+  .studies__titles
+  {
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 20px;
+    
+    &-text
+    {
+      font-size: 16px;
+    }
+  }
+  .studies__blocks
+  {
+    gap: 32px;
+    padding: 50px 50px;
+  }
+  .studies__block
+  {
+    padding-top: 32px;
+  }
+  .studies__block-btn
+  {
+    
+    &:hover &-text
+    {
+      font-size: 20px;
+      color: #a3be82;
+    }
+  }
+}

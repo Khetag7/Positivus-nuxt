@@ -83,7 +83,7 @@ const dataContents = ref([
               </h3>
               <p class="service__block-texts-title-p">{{ content.titleBottom }}</p>
             </div>
-            <div to="/" class="service__block-texts-btn">
+            <div class="service__block-texts-btn">
               <img :src="content.btnIcon" alt="" class="service__block-texts-img">
               <p class="service__block-texts-btn-text">
                 {{ content.text }}

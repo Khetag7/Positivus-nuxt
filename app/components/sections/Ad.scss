@@ -1,0 +1,141 @@
+@use '@/assets/styles/variables' as *;
+
+.container
+{
+  padding-top: 23.5px;
+  padding-bottom: 23.5px;
+}
+.ad
+{
+  margin-bottom: 140px;
+}
+.ad__block
+{
+  border-radius: 45px;
+  padding: 0px 60px;
+  background: #F3F3F3;
+  max-height: 347px;
+}
+.ad__right
+{
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: start;
+  justify-content: start;
+  max-width: 500px;
+  
+  &-title
+  {
+    font-weight: 500;
+    font-size: 30px;
+    color: #000000;
+  }
+  
+  &-text
+  {
+    @include g-text-two;
+  }
+  
+  &-btn
+  {
+    @include g-btn;
+    @include g-text-one;
+    background: #191A23;
+    color: #FFF;
+    text-align: center;
+    max-width: 288px;
+    
+    &:hover
+    {
+      background: #B9FF66;
+      color: #000000;
+    }
+  }
+}
+.ad__img
+{
+  position: relative;
+  left: 60px;
+  right: 0;
+  margin-right: 135px;
+}
+@media(max-width: 1280px)
+{
+  .ad
+  {
+    margin-bottom: 70px;
+  }
+  .container
+  {
+    padding: 0 20px;
+  }
+  .g-flex
+  {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+  .ad__right
+  {
+    align-items: center;
+    
+    &-text
+    {
+      text-align: center;
+    }
+    
+    &-title
+    {
+      text-align: center;
+    }
+  }
+  .ad__block
+  {
+    max-height: none;
+    padding: 30px 30px;
+    
+    
+  }
+  .ad__img
+  {
+    position: static;
+    margin-right: 0;
+  }
+}
+@media(max-width: 468px)
+{
+  .ad__img
+  {
+    width: 250px;
+  }
+  .ad__right
+  {
+    gap: 15px;
+    
+    &-text
+    {
+      font-size: 15px;
+    }
+    
+    &-title
+    {
+      font-size: 25px;
+    }
+    
+    &-btn
+    {
+      max-width: none;
+      max-height: none;
+      padding: 15px 25px;
+      font-size: 16px;
+    }
+  }
+}
+@media(max-width: 300px)
+{
+  .ad__img
+  {
+    width: 150px;
+  }
+}
