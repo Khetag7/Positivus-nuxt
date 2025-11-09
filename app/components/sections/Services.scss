@@ -213,3 +213,13 @@
     grid-row-gap: 20px;
   }
 }
+@media(max-width: 300px)
+{
+  .services__block-illustration
+  {
+    & img 
+    {
+      width: 150px;
+    }
+  }
+}
