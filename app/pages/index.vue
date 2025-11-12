@@ -6,6 +6,7 @@
 	<sectionsCaseStudies />
 	<sectionsOurWorking />
 	<sectionsTeam />
+	<sectionsTestimonials />
 	
 </template>
 
