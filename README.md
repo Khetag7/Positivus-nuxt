@@ -38,8 +38,6 @@
 
 ## 🚀 Live Demo
 
-> ⚠️ **Note**: The live demo is currently being prepared. Check back soon!
-
 [![Live Demo](https://img.shields.io/badge/View_Live_Demo-FF6B6B?style=for-the-badge&logo=github&logoColor=white)](https://khetag7.github.io/positivus/)
 
 ## 🌟 Features
