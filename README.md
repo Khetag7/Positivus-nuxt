@@ -38,7 +38,7 @@
 
 ## 🚀 Live Demo
 
-[![Live Demo](https://img.shields.io/badge/View_Live_Demo-FF6B6B?style=for-the-badge&logo=github&logoColor=white)](https://khetag7.github.io/positivus/)
+[![Live Demo](https://img.shields.io/badge/View_Live_Demo-FF6B6B?style=for-the-badge&logo=github&logoColor=white)](https://positivus2.netlify.app)
 
 ## 🌟 Features
 
