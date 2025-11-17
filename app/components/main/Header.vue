@@ -38,19 +38,19 @@ onUnmounted(() => {
       <nav class="header__nav header__nav--desktop">
         <ul class="header__list">
           <li>
-            <nuxt-link to="/" class="header__list-text">About us</nuxt-link>
+            <nuxt-link to="/about" class="header__list-text">About us</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/" class="header__list-text">Services</nuxt-link>
+            <nuxt-link to="/services" class="header__list-text">Services</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/" class="header__list-text">Use Cases</nuxt-link>
+            <nuxt-link to="/cases" class="header__list-text">Use Cases</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/" class="header__list-text">Pricing</nuxt-link>
+            <nuxt-link to="/pricing" class="header__list-text">Pricing</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/" class="header__list-text">Blog</nuxt-link>
+            <nuxt-link to="/blog" class="header__list-text">Blog</nuxt-link>
           </li>
           <nuxt-link to="/" class="header__btn">
             <p class="header__list-text">Request a quote</p>

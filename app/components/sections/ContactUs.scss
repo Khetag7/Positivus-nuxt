@@ -1,0 +1,240 @@
+@use '@/assets/styles/variables' as *;
+
+.contactUs {
+  margin-bottom: 140px;
+}
+
+.contactUs__titles {
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 637px;
+  
+  &-title {
+    @include g-heading-texts;
+    @include g-heading;
+    background: #B9FF66;
+    max-width: 229px;
+  }
+  
+  &-text {
+    @include g-text-two;
+  }
+}
+
+.contactUs__block {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 45px;
+  padding: 60px 100px 80px;
+  background: #F3F3F3;
+}
+
+.contactUs__form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 556px;
+  width: 100%;
+  
+  &-radioBtns {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    
+    .radio-btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      position: relative;
+      
+      input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        
+        &:checked + .radio-custom {
+          .radio-outer {
+            stroke: #000;
+            stroke-width: 2px;
+          }
+          .radio-inner {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+        
+        &:not(:checked) + .radio-custom {
+          .radio-inner {
+            opacity: 0;
+            transform: scale(0);
+          }
+        }
+      }
+      
+      .radio-custom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        
+        svg {
+          transition: all 0.3s ease;
+        }
+        
+        .radio-inner {
+          transition: all 0.3s ease;
+          transform-origin: center;
+        }
+      }
+      
+      p {
+        @include g-text-two;
+        margin: 0;
+        transition: color 0.3s ease;
+      }
+      
+      &:hover {
+        .radio-outer {
+          stroke: #666;
+        }
+        p {
+          color: #666;
+        }
+      }
+    }
+  }
+}
+
+.contactUs__btn {
+  @include g-btn;
+  @include g-text-one;
+  color: #FFF;
+  background: #191A23;
+  border: 1px solid #191A23;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: #FFF;
+    color: #000000;
+    border: 1px solid #000000;
+  }
+}
+
+.contactUs__img {
+  position: relative;
+  left: 106px;
+  overflow: hidden;
+}
+
+.contactUs__form-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+    label {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      color: #000;
+    }
+    
+    input, textarea {
+      border: 1px solid #000; /* Изменено на черный цвет #000 */
+      border-radius: 14px;
+      padding: 18px 30px;
+      background: #fff;
+      font-weight: 400;
+      font-size: 18px;
+      color: #898989;
+      line-height: 175%;
+      transition: all 0.3s ease;
+      width: 100%;
+      box-sizing: border-box;
+      
+      &:focus {
+        outline: none;
+        border-color: #B9FF66;
+        box-shadow: 0 0 0 3px rgba(185, 255, 102, 0.1);
+      }
+      
+      &:hover {
+        border-color: #B9FF66;
+      }
+      
+      &::placeholder {
+        color: #999;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+      }
+    }
+    
+    textarea {
+      min-height: 190px;
+      resize: none; /* Убрано растягивание */
+      font-family: inherit;
+    }
+  }
+}
+
+@media(max-width: 1330px)
+{
+  .container
+  {
+    padding: 0 20px;
+  }
+  .contactUs__form
+  {
+    max-width: 400px;
+  }
+}
+@media(max-width: 1024px)
+{
+  .contactUs__img {
+    display: none;
+  }
+  .contactUs__titles{
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+  .contactUs__block
+  {
+    align-items: center;
+    justify-content: center;
+    padding: 30px 50px 40px;
+  }
+}
+@media(max-width: 358px)
+{
+  .contactUs__btn
+  {
+    padding: 10px 17.5px;
+    font-size: 18px;
+  }
+  .contactUs__form-radioBtns .radio-btn p{
+    font-size: 16px;
+  }
+}
+@media(max-width: 300px)
+{
+  .contactUs__form-radioBtns
+  {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+}

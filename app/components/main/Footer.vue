@@ -74,19 +74,19 @@ const restorePlaceholder = (event) => {
             <nav class="footer__nav">
               <ul class="footer__list">
                 <li>
-                  <nuxt-link to="/" class="footer__list-text">About us</nuxt-link>
+                  <nuxt-link to="/about" class="footer__list-text">About us</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/" class="footer__list-text">Services</nuxt-link>
+                  <nuxt-link to="/services" class="footer__list-text">Services</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/" class="footer__list-text">Use Cases</nuxt-link>
+                  <nuxt-link to="/cases" class="footer__list-text">Use Cases</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/" class="footer__list-text">Pricing</nuxt-link>
+                  <nuxt-link to="/pricing" class="footer__list-text">Pricing</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/" class="footer__list-text">Blog</nuxt-link>
+                  <nuxt-link to="/blog" class="footer__list-text">Blog</nuxt-link>
                 </li>
               </ul>
             </nav>

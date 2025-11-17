@@ -7,6 +7,7 @@
 	<sectionsOurWorking />
 	<sectionsTeam />
 	<sectionsTestimonials />
+	<sectionsContactUs />
 	
 </template>
 
