@@ -17,7 +17,7 @@
         </nuxt-link>
       </div>
       <div class="navigating__right">
-        <img src="@/assets/images/pictures/NavigatingPicture.png" alt="NavigatingPicture" class="navigating__img">
+        <img src="@/assets/images/Pictures/NavigatingPicture.png" alt="NavigatingPicture" class="navigating__img">
       </div>
     </div>
   </section>
